@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ascencio Diesel | Repuestos de Maquinaria Pesada</title>
+    <!-- Fuente Industrial (Oswald y Roboto) -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Iconos (FontAwesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- CONEXIÓN CON TU ARCHIVO DE ESTILOS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- CABECERA -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="camion.png" alt="Logo Ascencio Diesel" onerror="this.src='https://cdn-icons-png.flaticon.com/512/2312/2312962.png'">
+                ASCENCIO <span>DIESEL</span>
+            </div>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav>
+                <ul id="nav-list">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <!-- Enlace redirige a la nueva Galería -->
+                    <li><a href="galeria.html">Galería</a></li>
+                    <li><a href="#marcas">Marcas</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO / PORTADA -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>REPUESTOS PARA MAQUINARIA PESADA</h1>
+            <p>Especialistas en Komatsu, Caterpillar y motores diésel de alto rendimiento. Calidad y garantía para que tu obra no pare.</p>
+            <a href="https://api.whatsapp.com/send?phone=51934916803&text=Hola,%20quiero%20cotizar%20un%20repuesto" class="btn btn-primary" target="_blank">
+                <i class="fab fa-whatsapp"></i> Cotizar Ahora
+            </a>
+        </div>
+    </section>
+
+    <!-- PRODUCTOS DESTACADOS (ESTÁTICOS) -->
+    <section id="productos" class="section bg-light">
+        <div class="container">
+            
+            <div class="section-header-box">
+                <h2 class="section-title">Nuestros Productos</h2>
+                <span class="section-subtitle">Productos Destacados</span>
+                <div class="divider"></div>
+            </div>
+
+            <div class="products-grid">
+                
+                <div class="card">
+                    <img src="cigueñal.png" alt="Cigueñal" class="card-img" onerror="this.src='https://placehold.co/600x400/ddd/555'">
+                    <div class="card-body">
+                        <h3>Cigueñales</h3>
+                        <p>Cigueñales forjados de alta resistencia para motores industriales y minería.</p>
+                        <span class="tag">Komatsu</span> <span class="tag">CAT</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="MOTOR.png" alt="Motores" class="card-img" onerror="this.src='https://placehold.co/600x400/ddd/555'">
+                    <div class="card-body">
+                        <h3>Motores Completos</h3>
+                        <p>Venta y reparación de motores. Garantía de potencia y durabilidad.</p>
+                        <span class="tag">Cummins</span> <span class="tag">Volvo</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="CAMISAS.png" alt="Camisas" class="card-img" onerror="this.src='https://placehold.co/600x400/ddd/555'">
+                    <div class="card-body">
+                        <h3>Camisas de Cilindro</h3>
+                        <p>Kits completos de camisas, pistones y anillos para ajuste de motor.</p>
+                        <span class="tag">Ajuste Motor</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="EMPAQUES.png" alt="Jebes" class="card-img" onerror="this.src='https://placehold.co/600x400/ddd/555'">
+                    <div class="card-body">
+                        <h3>Jebes y Empaques</h3>
+                        <p>Sellos hidráulicos, empaquetaduras y jebes de alta presión.</p>
+                        <span class="tag">Hidráulica</span>
+                    </div>
+                </div>
+
+                <!-- NUEVO PRODUCTO 5: INYECTORES -->
+                <div class="card">
+                    <img src="INYECTORES.PNG" alt="Inyectores" class="card-img" onerror="this.src='https://placehold.co/600x400/ddd/555'">
+                    <div class="card-body">
+                        <h3>Inyectores</h3>
+                        <p>Inyectores de alta precisión para un rendimiento óptimo y ahorro de combustible.</p>
+                        <span class="tag">Diversas Marcas</span>
+                    </div>
+                </div>
+
+                <!-- NUEVO PRODUCTO 6: TURBOS -->
+                <div class="card">
+                    <img src="TURBOS.PNG" alt="Turbos" class="card-img" onerror="this.src='https://placehold.co/600x400/ddd/555'">
+                    <div class="card-body">
+                        <h3>Turbos</h3>
+                        <p>Turbocompresores de alto rendimiento para máxima potencia y eficiencia del motor.</p>
+                        <span class="tag">Diversas Marcas</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- BOTÓN NEÓN HACIA LA GALERÍA -->
+            <div style="text-align: center;">
+                <a href="galeria.html" class="btn-neon">Ver Galería de Productos</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- MARCAS (LOGOS) -->
+    <section id="marcas" class="section">
+        <div class="container">
+            <div class="section-header-box">
+                <h2 class="section-title">Marcas que Manejamos</h2>
+                <div class="divider"></div>
+            </div>
+            
+            <div class="brands-container">
+                <img src="Cummins.png" alt="Logo Cummins" class="brand-logo" onerror="this.src='https://placehold.co/160x90/FFF/333?text=Cummins'">
+                <img src="johndeere.png" alt="Logo John Deere" class="brand-logo" onerror="this.src='https://placehold.co/160x90/FFF/333?text=Deere'">
+                <img src="INTERNATIONAL.png" alt="Logo International" class="brand-logo" onerror="this.src='https://placehold.co/160x90/FFF/333?text=International'">
+                <img src="KOMATSU.png" alt="Logo Komatsu" class="brand-logo" onerror="this.src='https://placehold.co/160x90/FFF/333?text=Komatsu'">
+                <img src="JCB.png" alt="Logo JCB" class="brand-logo" onerror="this.src='https://placehold.co/160x90/FFF/333?text=JCB'">
+                <img src="DEUTZ.png" alt="Logo Deutz" class="brand-logo" onerror="this.src='https://placehold.co/160x90/FFF/333?text=Deutz'">
+                <img src="IVECO.png" alt="Logo Iveco" class="brand-logo" onerror="this.src='https://placehold.co/160x90/FFF/333?text=Iveco'">
+                <img src="PERKINS.png" alt="Logo Perkins" class="brand-logo" onerror="this.src='https://placehold.co/160x90/FFF/333?text=Perkins'">
+                <img src="VOLVO.png" alt="Logo Volvo" class="brand-logo" onerror="this.src='https://placehold.co/160x90/FFF/333?text=Volvo'">
+                <img src="YANMAR.png" alt="Logo Yanmar" class="brand-logo" onerror="this.src='https://placehold.co/160x90/FFF/333?text=Yanmar'">
+                <img src="CAT.png" alt="Logo Caterpillar" class="brand-logo" onerror="this.src='https://placehold.co/160x90/FFF/333?text=CAT'">
+                <img src="FPT.png" alt="Logo FPT" class="brand-logo" onerror="this.src='https://placehold.co/160x90/FFF/333?text=FPT'">
+                <img src="KUBOTA.png" alt="Logo Kubota" class="brand-logo" onerror="this.src='https://placehold.co/160x90/FFF/333?text=Kubota'">
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="section contact-section">
+        <div class="container">
+            <div class="section-header-box">
+                <h2 class="section-title" style="color: white;">Contáctanos</h2>
+                <div class="divider"></div>
+            </div>
+            
+            <div class="contact-container">
+                
+                <div class="contact-info">
+                    <h3>Ascencio Diesel</h3>
+                    <p style="margin-bottom: 20px; color: #bbb;">Estamos listos para atender tus requerimientos con la rapidez que tu maquinaria necesita.</p>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Av. Nicolás Arriola 1788, La Victoria, Lima</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+51 934 916 803</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>ascenciodiesel@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Lun - Sáb: 9:00 AM - 5:00 PM</span>
+                    </div>
+
+                    <a href="#" class="btn btn-primary" style="margin-top: 10px;">Llamar Ahora</a>
+                </div>
+
+                <div class="map-box">
+                    <iframe 
+                        width="100%" 
+                        height="100%" 
+                        frameborder="0" 
+                        scrolling="no" 
+                        marginheight="0" 
+                        marginwidth="0" 
+                        title="Mapa Ubicación Ascencio Diesel"
+                        src="https://maps.google.com/maps?q=-12.074140413434904,-77.00619649878931&t=&z=15&ie=UTF8&iwloc=&output=embed">
+                    </iframe>
+                </div>
+
+            </div>
+        </div>
+        <footer>
+            &copy; 2026 Ascencio Diesel S.A.C. - Todos los derechos reservados.
+        </footer>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
