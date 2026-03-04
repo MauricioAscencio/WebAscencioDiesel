@@ -44,9 +44,11 @@ function renderGaleria(datos) {
         div.className = 'mosaic-item'; // Clase inicial (animación oculta)
         
         // Solo muestra el código y "Ascencio Diesel" fijo
-        div.innerHTML = `
-            <img src="${item.imagen}" alt="Ascencio Diesel" data-id="${index + 1}">
-            <div class="mosaic-info">
+       div.innerHTML = `
+            <img src="${item.imagen}" 
+                 alt="Ascencio Diesel" 
+                 data-id="${index + 1}" 
+                 loading="lazy"> <div class="mosaic-info">
                 <span class="code">CÓDIGO: ${item.codigo}</span>
                 <h4>Ascencio Diesel</h4>
             </div>
