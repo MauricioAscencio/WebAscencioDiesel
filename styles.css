@@ -487,3 +487,91 @@ footer {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }
+
+/* Contenedor principal */
+.whatsapp-container {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 2000; /* Asegura que esté por encima de todo */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+/* El botón circular principal - MÁS GRANDE */
+.whatsapp-main-btn {
+    width: 75px; /* De 60px a 75px */
+    height: 75px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50%;
+    border: none;
+    font-size: 40px; /* Icono más grande */
+    cursor: pointer;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.whatsapp-main-btn:hover {
+    transform: scale(1.15);
+    background-color: #1ebe57;
+}
+
+/* El menú de opciones - MÁS ANCHO Y FUENTE MÁS GRANDE */
+.whatsapp-menu {
+    display: none;
+    flex-direction: column;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+    margin-bottom: 20px;
+    overflow: hidden;
+    width: 240px; /* De 200px a 240px */
+    animation: slideUp 0.4s ease forwards;
+}
+
+.whatsapp-menu.show {
+    display: flex;
+}
+
+/* Cada opción de contacto */
+.wa-option {
+    display: flex;
+    align-items: center;
+    padding: 18px 20px; /* Más espacio interno */
+    text-decoration: none;
+    color: #222;
+    font-family: 'Oswald', sans-serif; /* Usamos la fuente de tu marca */
+    font-size: 20px; /* Texto más grande */
+    font-weight: 700;
+    transition: background 0.3s;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.wa-option:last-child { border-bottom: none; }
+.wa-option:hover { 
+    background: #f4f4f4; 
+    color: #25d366; 
+}
+
+.wa-option i {
+    font-size: 32px; /* Ícono de persona más grande */
+    margin-right: 15px;
+    color: #555;
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(20px) scale(0.9); }
+    to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* Ajuste para móviles (para que no tape media pantalla) */
+@media (max-width: 768px) {
+    .whatsapp-main-btn { width: 65px; height: 65px; font-size: 35px; }
+    .whatsapp-menu { width: 200px; }
+    .wa-option { font-size: 18px; padding: 15px; }
+}

@@ -116,3 +116,18 @@ document.addEventListener('DOMContentLoaded', () => {
         renderGaleria(repuestos);
     }
 });
+
+function toggleWhatsApp() {
+    const menu = document.getElementById('waMenu');
+    menu.classList.toggle('show');
+}
+
+// Cerrar el menú si se hace clic fuera de él
+window.onclick = function(event) {
+    if (!event.target.closest('.whatsapp-container')) {
+        const menu = document.getElementById('waMenu');
+        if (menu.classList.contains('show')) {
+            menu.classList.remove('show');
+        }
+    }
+}
